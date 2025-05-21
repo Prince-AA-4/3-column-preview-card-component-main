@@ -1,0 +1,107 @@
+:root{
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+    --Transparentwhite: hsla(0, 0%, 100%, 0.75); /*paragraph*/
+    --VeryLightgray: hsl(0, 0%, 95%); /*background, headings, buttons*/
+    --Fontsize: 15px 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:var(--VeryLightgray) ;
+    color: var(--Transparentwhite);
+    padding: 2rem 1rem;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+}
+
+.sedan-car{
+    background-color: var(--Brightorange);
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+}
+
+.suv-car{
+    background-color: var(--Darkcyan);
+}
+.Luxury-car{
+    background-color: var(--Verydarkcyan);
+    border-bottom-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+}
+
+.card{
+    padding: 3rem;
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-between;
+    gap: 0.8rem;
+    
+}
+
+.card h2{
+    font-size: 1.9em;
+    font-weight: bold;
+    font-family: Lexend Deca;
+    font-weight: 400;
+}
+
+.card p{
+    line-height: 1.6em;
+    font-size: var(--Fontsize);
+    font-family: Lexend Deca;
+    font-weight: 400;
+}
+
+.card button{
+    border: none;
+    background-color: var(--VeryLightgray);
+    padding: 0.75rem 1rem ;
+    width: fit-content;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-family: Lexend Deca;
+}
+
+.card button:hover{
+    background-color: transparent;
+    color: var(--VeryLightgray);
+    border-style: groove;
+    border-color: var(--Transparentwhite) 2rem solid;
+
+}
+
+@media(min-width:765px){
+    #container{
+        flex-direction: row;
+        max-width: 900px;
+    }
+    .sedan-car{
+        border-top-left-radius: 0.8rem;
+        border-bottom-left-radius: 0.8rem;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .Luxury-car{
+        border-top-right-radius: 0.8rem;
+        border-bottom-right-radius: 0.8rem;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}
+
+/* @media(max-width:1200px){
+    
+} */
