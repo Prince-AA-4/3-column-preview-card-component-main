@@ -40,7 +40,17 @@ body{
     border-bottom-left-radius: 0.8rem;
     border-bottom-right-radius: 0.8rem;
 }
+.sedan-car button{
+    color: var(--Brightorange);
+}
 
+.suv-car button{
+    color: var(--Darkcyan);
+}
+.Luxury-car button{
+    color: var(--Verydarkcyan);
+    
+}
 .card{
     padding: 3rem;
     display: flex;
@@ -84,6 +94,7 @@ body{
 
 @media(min-width:765px){
     #container{
+        margin-top: 5%;
         flex-direction: row;
         max-width: 900px;
     }
